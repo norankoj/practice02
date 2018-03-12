@@ -7,7 +7,6 @@ import java.util.Scanner;
 //500원동전, 100원동전, 50원동전, 1원동전 
 //각 몇 개로 변환 되는지 작성 하세요.
 
-//미완성
 
 public class problem04 {
 
@@ -20,16 +19,13 @@ public class problem04 {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.print("금액:");
-		int input = sc.nextInt();
-
+		int input = sc.nextInt();                           
+		 for (i = 0; i < won.length; i++) {
+			 n = input / won[i];   
+			 input = input % won[i];
+                 System.out.println(won[i] + "원: " + n + "개");
 			
-				for (i = 0; i < won.length; i++) {
-					if (input - won[i] > 0) {
-				input = input - won[i];
-				n++;
-				System.out.println(won[i] + "원: " + n + "개");
-			}
-			n = 0;
+				
 		}
 		sc.close();
 	}
