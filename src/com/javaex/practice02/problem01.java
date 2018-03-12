@@ -1,0 +1,22 @@
+package com.javaex.practice02;
+
+//다음 주어진 배열 데이터를 이용하여 3의 배수의 개수와 배수의 합을 아래와 같이 출력하는 프로그램을 작성하세요.
+//int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
+public class problem01 {
+
+	public static void main(String[] args) {
+
+		int sum=0;
+		int num=0;
+		int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
+		for(int i=0;i<data.length;i++) {
+		if(data[i]%3==0) {
+			sum+=data[i];
+			num++;
+		}
+		}
+		System.out.println("주어진 배열에서 3의 배수의 개수=>"+num);			
+		System.out.println("주어진 배열에서 3의 배수의 합=> "+sum);
+	}
+
+}
